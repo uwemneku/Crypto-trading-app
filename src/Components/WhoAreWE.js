@@ -9,7 +9,7 @@ export default function WhoAreWE() {
         console.log(isVisible)
     }, [isVisible])
     return (
-        <div ref={ref} className={`${isVisible ? "opacity-100": "opacity-0"} transition-opacity duration-500  px-6 sm:px-12 h-screen mt-20`} >
+        <div ref={ref} className={`${isVisible ? "opacity-100": "opacity-0"} transition-opacity duration-500  px-6 sm:px-12 h-screen dark:bg-gray-800 flex justify-center items-center`} >
 
             <h1 className=" block sm:hidden font-bold text-2xl text-gray-600 py-6  lg:text-4xl text-center" >Who are we?</h1>
             <div className="flex flex-col sm:flex-row items-center" >

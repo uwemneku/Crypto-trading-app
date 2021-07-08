@@ -1,15 +1,15 @@
 .menu{
-    @apply sm:pt-20 bg-gray-300 self-stretch sm:h-screen w-full
+    @apply sm:pt-20 bg-gray-400 self-stretch sm:h-screen w-full
 }
 .menu ul{
     @apply flex justify-around sm:flex-col 
 }
 .menu a{
-    @apply flex items-center cursor-default transition-all duration-300 hover:text-black hover:bg-blue-100 my-2 font-semibold p-3
+    @apply text-sm flex items-center cursor-default transition-all duration-300 hover:text-black hover:bg-gray-200 my-2 font-medium px-10 sm:p-3
 }
 .menu p{
     @apply p-1 ml-3 hidden sm:block
 }
 .active{
-    @apply bg-blue-600 text-white border-r-8 border-gray-700
+    @apply bg-white text-blue-600 shadow-lg font-bold 
 }

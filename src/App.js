@@ -34,6 +34,7 @@ export default function App() {
 
         //checks to see if the user is logged in and then set laoding state
         useEffect(() => {
+          document.documentElement.classList.add('dark') 
           auth.onAuthStateChanged((authUser) => {
             if(authUser){
               dispatch(login())
@@ -64,11 +65,9 @@ export default function App() {
                         :
                         <>
                                       <Hero />
-                                      <div className="h-screen">
                                         
-                        <Pricing />
-                                      </div>
                                       <Whyus />
+                                        <Pricing />
                                       <WhoAreWE />
                                   </>
                       }

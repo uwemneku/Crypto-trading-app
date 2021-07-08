@@ -7,15 +7,38 @@
   pointer-events: none;
 }
 .nav_links{
-  @apply px-4 py-2  mx-2 hover:bg-blue-50;
+  @apply px-4 py-2  mx-2 hover:bg-blue-50 dark:text-white ; 
   
 }
 .nav_button{
-  @apply font-medium px-3 py-1  rounded-md mx-2 hover:shadow-sm
+  @apply font-medium px-3 py-1  rounded-md mx-2 hover:shadow-sm dark:text-white
 }
 .hero_button{
-  @apply font-medium px-4 py-2  rounded-md mx-2 hover:shadow-sm ring-2 ring-blue-600
+  @apply font-medium px-4 py-2  rounded-md mx-2 hover:shadow-sm ring-2 ring-blue-600 dark:text-white
 }
+
+.pricing{
+  @apply w-screen  dark:bg-gray-900 flex justify-center items-center flex-wrap min-h-screen py-6
+}
+.pricing .item{
+  @apply rounded-md shadow-lg bg-white w-max m-5 py-10 px-10 group transform transition-transform duration-300 hover:scale-105 hover:bg-orange-600 hover:text-white
+}
+.pricing ul{
+  @apply my-5 text-sm font-medium
+}
+.pricing p{
+  @apply px-3 my-1
+}
+.pricing li{
+  @apply flex
+}
+.pricing h3{
+  @apply font-bold text-xl
+}
+.pricing button{
+  @apply bg-gray-900  group-hover:bg-blue-900 text-white rounded-md text-sm font-medium py-3 px-5 mt-5
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
