@@ -52,7 +52,7 @@ export default function App() {
           return(
             <div className="w-screen h-screen text-4xl flex flex-col items-center justify-center text-blue-600" >
                 <AiOutlineLoading className="animate-spin" />
-                <p className="font-bold animate-pulse" >Coin Cap</p>
+                <p className="font-bold animate-pulse" >Spiral <span className="font-extralight" >Exhange</span> </p>
             </div>
           )
         } else{

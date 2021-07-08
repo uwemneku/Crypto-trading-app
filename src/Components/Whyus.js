@@ -12,10 +12,10 @@ export default function Whyus() {
         
     }, [inViewport])
     return (
-        <section ref={ref} className="w-screen min-h-screen py-10 bg-gray-200">
+        <section id="whyus" ref={ref} className="w-screen min-h-screen py-10 bg-gray-50">
             <div className="text-center flex flex-col items-center justify-center">
-                <h1 className="font-bold text-2xl text-gray-600  lg:text-4xl" >Why Us</h1>
-                <p className="text-gray-500 py-1 px-11 sm:w-1/2 sm:py-6 text-lg  sm:text-xl" >We are a company guided by some simple values  which from the core of our operations</p>
+                <h1 className="font-bold text-2xl  text-gray-600  md:text-4xl" >Why Us</h1>
+                <p className="text-gray-500 py-1 px-11 lg:w-1/2 sm:py-6 text-lg  sm:text-xl" >We are a company guided by some simple values  which from the core of our operations</p>
             </div>
             <div className="my-1 flex justify-around flex-wrap " >
                 <Card />
