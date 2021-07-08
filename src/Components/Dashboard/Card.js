@@ -1,4 +1,5 @@
 import React from 'react'
+import colors from 'tailwindcss/colors'
 
 export default function Card({title, amount, showStats = false, color}) {
     const _color = `bg-${color}-500`
@@ -23,8 +24,8 @@ export default function Card({title, amount, showStats = false, color}) {
                 }
 
             </div>
-            <div className={`${_color} self-stretch p-4 flex items-center`} >
-                <p className={`${textColor} text-xl sm:text-4xl bg-white p-2 sm:p-1 rounded-md`} >£</p>
+            <div style={{backgroundColor:colors[color][500]}} className={` self-stretch p-4 flex items-center`} >
+                <p style={{color:colors[color][500]}} className={`text-xl sm:text-4xl bg-white p-2 sm:p-1 rounded-md`} >£</p>
             </div>
         </div>
     )

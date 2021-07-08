@@ -28,7 +28,7 @@ export default function Header() {
             <div className="flex" >
                 {isLoggedIn && 
                     <Link to="/home/profile" className="lg:hidden px-3" >
-                        <Avatar size={10} />
+                        <Avatar size={50} />
                     </Link>
                 }
                 <button className="block sm:hidden"  onClick={handleMenuClick} >

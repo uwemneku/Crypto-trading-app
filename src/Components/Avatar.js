@@ -6,8 +6,8 @@ export default function Avatar({size}) {
     const width = `w-${size}`
     const height = `h-${size}`
     return (
-        <figure className={`${width} ${height} rounded-full overflow-hidden bg-blue-300`} >
-                    <img className="h-full"  src={image} alt="dff" />
+        <figure style={{width:size, height:height}} className={` rounded-full overflow-hidden bg-blue-300`} >
+                    <img className="w-full"  src={image} alt="dff" />
         </figure>
     )
 }

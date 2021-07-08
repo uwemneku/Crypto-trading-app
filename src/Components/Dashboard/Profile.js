@@ -21,7 +21,7 @@ export default function Profile() {
 
             <div  className={`profile ${match? '-right-0': '-right-3/4'}`} >
                 <div className="flex my-5 flex-col justify-center items-center" >
-                    <Avatar size={16} />
+                    <Avatar size={100} />
                     <p className="text-lg font-semibold" >Victor Rebook</p>
                 </div>
 
