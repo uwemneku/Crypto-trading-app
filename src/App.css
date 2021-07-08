@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.nav_links{
+  @apply px-4 py-2  mx-2 hover:bg-blue-50;
+  
+}
+.nav_button{
+  @apply font-medium px-3 py-1  rounded-md mx-2 hover:shadow-sm
+}
+.hero_button{
+  @apply font-medium px-4 py-2  rounded-md mx-2 hover:shadow-sm ring-2 ring-blue-600
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
